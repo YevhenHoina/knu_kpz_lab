@@ -1,0 +1,45 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "custommachinery:creature_infuser",
+	"time": 10,
+	"requirements": [
+		{
+			"type": "custommachinery:fluid",
+			"fluid": "minecraft:water",
+			"amount": 1000,
+			"mode": "input"
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "biomancy:tough_fibers",
+			"amount": 32,
+			"mode": "input"
+		},
+		{
+			"type": "custommachinery:energy_per_tick",
+			"amount": 10000,
+			"mode": "input"
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "minecraft:slime_block",
+			"amount": 1,
+			"mode": "output"
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "kubejs:quartz_crab_dummy",
+			"amount": 1,
+			"mode": "output",
+			"id": "input_creature"
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "kubejs:crab_dummy",
+			"amount": 1,
+			"mode": "input",
+			"id": "output_creature"
+		}
+	]
+	
+}

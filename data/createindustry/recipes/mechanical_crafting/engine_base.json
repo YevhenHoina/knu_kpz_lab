@@ -1,0 +1,33 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    " XBX ",
+    "SPCPS",
+    "SPAPS"
+  ],
+  "key": {
+
+    "S": {
+      "tag": "forge:ingots/brass"
+    },
+    "X": {
+      "tag": "forge:ingots/aluminum"
+    },
+  "C": {
+    "item": "createindustry:heavy_machinery_casing"
+  },
+    "A": {
+      "item": "create:shaft"
+    },
+    "P": {
+      "item": "createindustry:heavy_plate"
+    },
+    "B": {
+      "item": "createindustry:turbine_blade"
+    }
+  },
+  "result": {
+    "item": "createindustry:engine_base"
+  },
+  "acceptMirrored": true
+}

@@ -1,0 +1,1 @@
+{"type":"biomancy:decomposing","input":{"ingredient":{"item":"minecraft:prismarine"},"count":1},"outputs":[{"result":{"item":"create:veridium","count_range":{"type":"uniform","min":5,"max":9}}}],"time":450}

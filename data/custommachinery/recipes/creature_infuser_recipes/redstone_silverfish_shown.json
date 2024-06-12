@@ -1,0 +1,45 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "custommachinery:creature_infuser",
+	"time": 1000,
+	"requirements": [
+		{
+			"type": "custommachinery:fluid",
+			"fluid": "kubejs:cleansing_serum",
+			"amount": 1000,
+			"mode": "input"
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "nomoretorchspam:glow_crystal",
+			"amount": 4,
+			"mode": "input"
+		},
+		{
+			"type": "custommachinery:energy_per_tick",
+			"amount": 100,
+			"mode": "input"
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "minecraft:slime_block",
+			"amount": 1,
+			"mode": "output"
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "kubejs:redstone_silverfish_dummy",
+			"amount": 1,
+			"mode": "output",
+			"id": "output_creature"
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "kubejs:silverfish_dummy",
+			"amount": 1,
+			"mode": "input",
+			"id": "input_creature"
+		}
+	]
+	
+}

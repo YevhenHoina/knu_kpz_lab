@@ -1,0 +1,18 @@
+{
+  "type": "createdieselgenerators:basin_fermenting",
+  "ingredients": [
+    {
+      "fluid": "create:honey",
+      "amount": 50
+    },
+    {
+      "item": "minecraft:slime_ball"
+    }
+  ],
+  "processingTime": 400,
+  "results": [
+    {
+      "item": "tconstruct:ichor_slime_ball"
+    }
+  ]
+}

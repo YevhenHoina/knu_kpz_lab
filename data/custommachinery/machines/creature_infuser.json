@@ -1,0 +1,176 @@
+{
+  "name": "Creature infuser",
+  "description": "Infuses nearby creatures to convert them",
+  "appearance": {
+    "idle": {
+      "block": "custommachinery:machine/creature_infuser"
+    },
+    "errored": {
+      "block": "custommachinery:machine/creature_infuser"
+    },
+    "running": {
+      "block": "custommachinery:machine/creature_infuser_running",
+      "lightlevel": 15
+    }
+  },
+  "components": [
+    {
+      "capacity": 100000,
+      "type": "custommachinery:energy"
+    },
+    {
+      "mode": "input",
+      "id": "input1",
+      "capacity": 10000,
+      "type": "custommachinery:fluid"
+    },
+    {
+      "mode": "input",
+      "id": "input2",
+      "type": "custommachinery:item"
+    },
+    {
+      "mode": "output",
+      "id": "output1",
+      "type": "custommachinery:item"
+    },
+    {
+      "type": "custommachinery:item",
+      "item": "kubejs:redstone_silverfish_dummy",
+      "amount": 1,
+      "mode": "output",
+      "id": "output_creature",
+      "whitelist": true,
+      "filter": ["kubejs:redstone_silverfish_dummy", "kubejs:quartz_crab_dummy", "kubejs:dragon_breath_dummy"]
+    },
+    {
+      "type": "custommachinery:item",
+      "item": "kubejs:silverfish_dummy",
+      "amount": 1,
+      "mode": "input",
+      "id": "input_creature",
+      "whitelist": true,
+      "filter": ["kubejs:silverfish_dummy", "kubejs:crab_dummy", "kubejs:drowned_dummy"]
+      
+    }
+  ],
+  "gui": [
+    {
+      "texture": "custommachinery:textures/gui/base_background.png",
+      "x": 0,
+      "y": 0,
+      "type": "custommachinery:texture"
+    },
+    {
+      "x": 47,
+      "y": 80,
+      "type": "custommachinery:player_inventory"
+    },
+    {
+      "x": 47,
+      "y": 30,
+      "type": "custommachinery:energy"
+    },
+    {
+      "x": 67,
+      "y": 30,
+      "type": "custommachinery:fluid",
+      "id": "input1"
+    },
+    {
+      "x": 97,
+      "y": 37,
+      "type": "custommachinery:slot",
+      "id": "input2"
+    },
+    {
+      "id": "output1",
+      "x": 159,
+      "y": 37,
+      "type": "custommachinery:slot"
+    },
+    {
+      "x": 126,
+      "y": 37,
+      "type": "custommachinery:progress"
+    },
+    {
+      "x": 236,
+      "y": 5,
+      "type": "custommachinery:status"
+    },
+    {
+      "text": "Creature infuser",
+      "x": 7,
+      "y": 5,
+      "type": "custommachinery:text"
+    }
+  ],
+  "jei": [
+    {
+      "texture": "custommachinery:textures/gui/base_background.png",
+      "x": 0,
+      "y": 0,
+      "type": "custommachinery:texture"
+    },
+    {
+      "x": 47,
+      "y": 30,
+      "type": "custommachinery:energy"
+    },
+    {
+      "x": 67,
+      "y": 30,
+      "type": "custommachinery:fluid",
+      "id": "input1"
+    },
+    {
+      "x": 87,
+      "y": 30,
+      "type": "custommachinery:slot",
+      "id": "input2"
+    },
+    {
+      "id": "output1",
+      "x": 149,
+      "y": 30,
+      "type": "custommachinery:slot"
+    },
+    {
+      "x": 116,
+      "y": 30,
+      "type": "custommachinery:progress"
+    },
+    {
+      "x": 98,
+      "y": 97,
+      "type": "custommachinery:progress",
+      "emptyTexture": "custommachinery:textures/gui/mutation_progress_empty.png",
+      "filledTexture": "custommachinery:textures/gui/mutation_progress_filled.png"
+    },
+    {
+      "text": "Transform",
+      "x": 84,
+      "y": 85,
+      "type": "custommachinery:text"
+    },
+    {
+      "type": "custommachinery:slot",
+      "x": 131,
+      "y": 96,
+      "width": 0,
+      "height": 0,
+      "id": "output_creature",
+      "item": "kubejs:redstone_silverfish_dummy"
+    },
+    {
+      "type": "custommachinery:slot",
+      "x": 69,
+      "y": 96,
+      "width": 0,
+      "height": 0,
+      "id": "input_creature",
+      "item": "kubejs:silverfish_dummy"
+    }
+  ]
+}

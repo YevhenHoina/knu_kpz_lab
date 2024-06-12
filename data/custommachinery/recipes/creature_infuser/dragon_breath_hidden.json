@@ -1,0 +1,45 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "custommachinery:creature_infuser",
+	"time": 1000,
+	"hidden": true,
+	"requirements": [
+		{
+			"type": "custommachinery:fluid",
+			"fluid": "kubejs:cleansing_serum",
+			"amount": 1000,
+			"mode": "input"
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "minecraft:end_crystal",
+			"amount": 4,
+			"mode": "input"
+		},
+		{
+			"type": "custommachinery:energy_per_tick",
+			"amount": 10000,
+			"mode": "input"
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "tconstruct:clear_glass",
+			"amount": 1,
+			"mode": "output"
+		},
+		{
+			"type": "custommachinery:command",
+			"command": "/execute at @e[type=minecraft:silverfish,distance=..5,sort=nearest, limit=1] run summon items_to_mobs:redstone_bug",
+			"phase": "ending",
+			"permission": 4
+		
+		},
+		{
+			"type": "custommachinery:command",
+			"command": "/kill @e[type=minecraft:silverfish,distance=..5,sort=nearest, limit=1]",
+			"phase": "ending",
+			"permission": 4
+		}
+	]
+
+}

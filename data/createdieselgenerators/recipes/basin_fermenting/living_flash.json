@@ -1,0 +1,22 @@
+{
+  "type": "createdieselgenerators:basin_fermenting",
+  "ingredients": [
+    {
+      "item": "cobbled_paths:moss_ball",
+      "count": 16
+    },
+    {
+      "item": "kubejs:immortuos_eggs_sample"
+    },
+    {
+      "item": "minecraft:rotten_flesh"
+    }
+  ],
+  "processingTime": 400,
+  "results": [
+    {
+      "item": "biomancy:living_flesh",
+      "amount": 1
+    }
+  ]
+}

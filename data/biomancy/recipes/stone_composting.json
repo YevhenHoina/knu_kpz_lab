@@ -1,0 +1,1 @@
+{"type":"biomancy:decomposing","input":{"ingredient":{"item":"minecraft:stone"},"count":1},"outputs":[{"result":{"item":"minecraft:deepslate","count_range":{"type":"uniform","min":1,"max":2}}}],"time":1200}

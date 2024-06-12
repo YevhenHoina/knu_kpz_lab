@@ -1,0 +1,124 @@
+
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createindustry:engine_base"
+  },
+  "transitionalItem": {
+    "item": "createindustry:engine_base"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createindustry:engine_base"
+        },
+        {
+            "item": "createdieselgenerators:engine_piston"
+        }
+      ],
+      "results": [
+        {
+          "item": "createindustry:engine_base"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createindustry:engine_base"
+        },
+        {
+          "item": "createindustry:steel_fluid_tank"
+        }
+      ],
+      "results": [
+        {
+          "item": "createindustry:engine_base"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createindustry:engine_base"
+        },
+        {
+          "item": "createindustry:screw"
+        }
+      ],
+      "results": [
+        {
+          "item": "createindustry:engine_base"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createindustry:engine_base"
+        },
+        {
+          "item": "createindustry:screwdriver"
+        }
+      ],
+      "results": [
+        {
+          "item": "createindustry:engine_base"
+        }
+      ]
+    },
+
+
+
+
+
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "create:unprocessed_obsidian_sheet"
+        },
+        {
+          "fluid": "createindustry:lubrication_oil",
+          "nbt": {},
+          "amount": 1000
+        }
+      ],
+      "results": [
+        {
+          "item": "create:unprocessed_obsidian_sheet"
+        }
+      ]
+    },
+
+
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createindustry:engine_base"
+        },
+        {
+          "item": "create:cogwheel"
+        }
+      ],
+      "results": [
+        {
+          "item": "createindustry:engine_base"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "createindustry:gasoline_engine",
+      "count": 2
+    }
+  ],
+  "loops": 8
+}
